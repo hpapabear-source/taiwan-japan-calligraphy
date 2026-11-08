@@ -69,7 +69,7 @@
 <script>
 /* 第一版不設後台；教材文字與題庫集中於此，方便未來替換。 */
 const EMBEDDED_ASSETS={}; // 單檔版會內嵌教材圖片
-const img=(f)=>EMBEDDED_ASSETS[f]||'assets/'+f;
+const img=(f)=>EMBEDDED_ASSETS[f]||f;
 const quiz=[
  {tw:'萬',jp:'万',choices:['万','方','萬'],correct:0,phrase:'萬事如意',meaning:'祝福一切順利、事事稱心。',jpMeaning:'すべてが思いどおりになりますように。',note:'台灣使用「萬」，日本通常寫「万」。',noteJP:'台湾では「萬」、日本では「万」と書きます。'},
  {tw:'發',jp:'発',choices:['髪','発','發'],correct:1,phrase:'恭喜發財',meaning:'祝福新的一年財運亨通、生活富足。',jpMeaning:'新しい年に、豊かさと幸運が訪れますように。',note:'「發」和「発」的上、下結構都有差異。',noteJP:'台湾の「發」と日本の「発」は、上も下も形が違います。'},
