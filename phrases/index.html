@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbf5ed">
+<meta name="description" content="台日交流書法體驗課堂常用日語：六種情境、35句中日對照、平假名與一鍵日語朗讀。">
+<title>台日交流｜課堂常用日語・語音播放</title>
+<style>
+:root{--accent:#973d30;--deep:#5b2c29;--ink:#2e2926;--muted:#746c65;--paper:#fffdf8;--cream:#fbf5ed;--line:#ead9c9;--soft:#f8e9d8;--shadow:0 12px 34px rgba(79,48,31,.09);--round:18px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(145deg,#fff9ef 0%,#f7eee7 90%);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC",system-ui,sans-serif;font-size:16px}
+button,select,input{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #dda86a;outline-offset:3px}
+button:disabled{opacity:.45;cursor:default}
+.shell{max-width:1190px;margin:auto;padding:0 22px 84px}
+.top{background:#fffaf3;box-shadow:0 1px 0 #eaddca;position:sticky;top:0;z-index:15}
+.top-inner{max-width:1190px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:67px;padding:11px 22px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:16px;color:var(--deep);letter-spacing:.06em;white-space:nowrap;display:flex;gap:11px;align-items:center}
+.brand-icon{width:34px;height:34px;display:grid;place-items:center;background:var(--accent);color:white;border-radius:11px;font-family:serif;font-size:22px}
+.controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.small-label{color:var(--muted);font-size:13px;font-weight:650}
+.select{border:1px solid #d9bd9d;padding:7px 10px;background:white;color:var(--ink);border-radius:10px;font-size:14px}
+.stop-btn,.stage-top-btn{border:1px solid #d9bd9d;background:white;border-radius:10px;padding:8px 12px;color:#7d392d;font-size:13px;font-weight:750}
+.hero{padding:42px 0 23px;display:flex;align-items:center;gap:28px;justify-content:space-between}
+.eyebrow{font-size:13px;color:var(--accent);font-weight:800;letter-spacing:.17em;margin-bottom:12px}
+h1{font-family:"Noto Serif TC","Songti TC","PMingLiU",serif;font-size:clamp(32px,4.5vw,52px);line-height:1.27;margin:0;color:var(--deep);font-weight:900;letter-spacing:.05em}
+.sub{margin:12px 0 0;color:var(--muted);line-height:1.8;font-size:15px}
+.hero-art{height:102px;min-width:125px;display:grid;place-items:center;color:#b34f3c;font-size:76px;font-family:"DFKai-SB","BiauKai",serif;opacity:.85;transform:rotate(-7deg)}
+.toolbar{background:var(--paper);padding:16px 18px;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--round);display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:13px}
+#search{border:1px solid #e3d4c5;background:#fff;padding:11px 14px;border-radius:11px;flex:1;min-width:200px;outline:none}
+.count{color:var(--muted);font-size:13px;min-width:68px;text-align:right}
+.categories{display:flex;flex-wrap:wrap;gap:7px;margin:21px 0 28px}
+.category{border:1px solid #dbc1a8;background:#fffaf4;color:#734e40;border-radius:999px;padding:9px 14px;font-size:14px;font-weight:750;transition:.16s ease}
+.category.active,.category:hover{background:var(--accent);border-color:var(--accent);color:white}
+.group-header{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:32px 0 15px;padding-bottom:10px;border-bottom:1px solid #ddc6b0}
+h2{font-family:"Noto Serif TC","Songti TC",serif;font-size:26px;margin:0;color:var(--deep)}
+.group-sub{font-size:13px;color:#936b5b}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.phrase{background:var(--paper);border:1px solid #ead8c5;border-radius:17px;padding:19px 19px 16px;box-shadow:0 5px 18px rgba(86,58,37,.045);display:flex;flex-direction:column;gap:14px;min-height:200px}
+.phrase-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.cn{font-weight:800;color:#64382f;font-size:20px;line-height:1.55}
+.num{font-size:12px;color:#b08d75;font-variant-numeric:tabular-nums;flex:none}
+.ja{font-family:"Noto Sans JP","Yu Gothic","Meiryo","Hiragino Kaku Gothic ProN",sans-serif;font-size:20px;line-height:1.7;font-weight:650;word-break:normal;overflow-wrap:anywhere}
+.hira{font-family:"Noto Sans JP","Yu Gothic","Meiryo",sans-serif;color:#776a5e;font-size:15px;line-height:1.8;overflow-wrap:anywhere;background:#fbf4ec;border-radius:9px;padding:8px 10px}
+.phrase-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+.play{display:inline-flex;align-items:center;gap:9px;background:var(--accent);border:1px solid var(--accent);color:#fff;border-radius:12px;padding:11px 18px;font-weight:800;min-width:125px;justify-content:center;transition:transform .1s ease,background .16s ease;font-size:14px}
+.play:hover{background:#7e3127}.play:active{transform:scale(.97)}.play.playing{background:#5c713b;border-color:#5c713b}
+.expand{border:1px solid #e3d0ba;color:#785548;background:#fffdf9;padding:10px 12px;border-radius:11px;font-weight:750;font-size:13px}
+.empty{border:1px dashed #d7ba9d;background:#fff8f0;padding:32px;border-radius:14px;text-align:center;color:var(--muted)}
+.foot{text-align:center;color:#8e7a68;font-size:12px;margin-top:35px;line-height:1.8}
+.stage-bg{position:fixed;inset:0;background:rgba(29,22,20,.70);z-index:30;display:none;align-items:center;justify-content:center;padding:18px}
+.stage-bg.open{display:flex}.stage{width:min(880px,100%);background:#fffaf2;border-radius:22px;padding:clamp(22px,4vw,44px);position:relative;box-shadow:0 30px 90px #24151044;max-height:95vh;overflow:auto}
+.stage-head{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:21px}
+.stage-title{color:#916e5e;font-weight:800;font-size:14px}
+.stage-cn{font-size:clamp(24px,3vw,35px);font-weight:850;color:var(--deep);margin-bottom:17px}
+.stage-ja{font-family:"Noto Sans JP","Yu Gothic","Meiryo",sans-serif;font-size:clamp(27px,4.3vw,46px);line-height:1.7;font-weight:750;margin:0 0 18px}
+.stage-hira{color:#776454;font-size:clamp(20px,2.5vw,29px);line-height:1.7;border-top:1px solid var(--line);padding-top:16px;margin-bottom:22px}
+.stage-actions{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.stage-actions .play{font-size:17px;padding:14px 24px;min-width:170px}
+.stage-nav{display:flex;gap:8px}.stage-top-btn{font-size:14px;padding:12px 15px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.hero{padding-top:26px}.hero-art{font-size:62px;min-width:65px}.phrase{min-height:unset}.brand{font-size:14px}}
+@media(max-width:500px){.shell{padding:0 13px 64px}.top-inner{padding:10px 13px}.controls{width:100%;justify-content:flex-end}.hero-art{display:none}.toolbar{padding:11px}.toolbar #search{width:100%;flex:unset}.count{margin-left:auto}.categories{margin:15px 0 20px}.category{font-size:12px;padding:9px 11px}.group-header{display:block}.group-sub{display:block;margin-top:6px}.cn{font-size:18px}.ja{font-size:19px}.stage{padding:20px}.stage-actions .play{width:100%}.stage-nav{width:100%;justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-inner">
+  <div class="brand"><span class="brand-icon">書</span>台日交流｜課堂常用日語</div>
+  <div class="controls"><label for="speed" class="small-label">日語語速</label><select id="speed" class="select" aria-label="日文朗讀語速"><option value="0.75">慢速 0.75</option><option value="0.9">稍慢 0.9</option><option value="1">正常 1.0</option><option value="1.1">稍快 1.1</option><option value="1.2">快速 1.2</option></select><button class="stop-btn" id="stop" type="button">■ 停止播放</button></div>
+</div></header>
+<main class="shell">
+<section class="hero"><div><div class="eyebrow">日台交流 · 漢字書道体験</div><h1>書法課堂常用日語</h1><p class="sub">六個教學情境・35句常用指令<br>中文理解、日文朗讀、平假名對照。按一下喇叭，就能播放給日本學生聽。</p></div><div class="hero-art" aria-hidden="true">和</div></section>
+<section class="toolbar" aria-label="搜尋句子"><input id="search" type="search" placeholder="搜尋中文、日文或平假名…" aria-label="搜尋句子"><span class="count" id="count">共35句</span></section>
+<nav class="categories" id="categories" aria-label="情境分類"></nav>
+<div id="content"></div>
+<div class="foot">資料依據：台日交流《書法體驗課堂常用日語（平假名版）》｜語音使用裝置的日文朗讀功能，實際聲音因瀏覽器而異。</div>
+</main>
+<div class="stage-bg" id="stageBg" role="presentation"><section class="stage" id="stage" role="dialog" aria-modal="true" aria-label="單句放大播放" aria-hidden="true"><div class="stage-head"><span class="stage-title" id="stageCat"></span><button id="stageClose" class="stage-top-btn" type="button" aria-label="關閉">✕ 關閉</button></div><div class="stage-cn" id="stageCn"></div><div class="stage-ja" lang="ja" id="stageJa"></div><div class="stage-hira" lang="ja" id="stageHira"></div><div class="stage-actions"><button class="play" id="stagePlay" type="button">▶ 播放日文</button><div class="stage-nav"><button class="stage-top-btn" id="stagePrev" type="button">← 上一句</button><button class="stage-top-btn" id="stageNext" type="button">下一句 →</button></div></div></section></div>
+<script>
+'use strict';
+const GROUPS=[{"id":"1","title":"台日漢字比一比","subtitle":"互動問答","items":[{"id":"1-1","cn":"大家準備好了嗎？","ja":"みなさん、準備はいいですか？","hira":"みなさん、じゅんびは いいですか？"},{"id":"1-2","cn":"請選出正確答案。","ja":"正しい答えを選んでください。","hira":"ただしい こたえを えらんでください。"},{"id":"1-3","cn":"知道答案的人請舉手。","ja":"わかった人は手を挙げてください。","hira":"わかった ひとは てを あげてください。"},{"id":"1-4","cn":"我們來公布答案！","ja":"では、正解を発表します！","hira":"では、せいかいを はっぴょうします！"},{"id":"1-5","cn":"答對了！","ja":"正解です！","hira":"せいかいです！"},{"id":"1-6","cn":"下一題！","ja":"次の問題に行きましょう！","hira":"つぎの もんだいに いきましょう！"}]},{"id":"2","title":"繁體字筆順練習","subtitle":"開始動筆","items":[{"id":"2-1","cn":"現在開始練習吧！","ja":"それでは、練習を始めましょう！","hira":"それでは、れんしゅうを はじめましょう！"},{"id":"2-2","cn":"一起來練習吧！","ja":"一緒に練習しましょう！","hira":"いっしょに れんしゅうしましょう！"},{"id":"2-3","cn":"請注意筆順。","ja":"書き順に注意してください。","hira":"かきじゅんに ちゅういしてください。"},{"id":"2-4","cn":"請先在練習紙上寫寫看。","ja":"まず、練習用紙に書いてみましょう。","hira":"まず、れんしゅうようしに かいてみましょう。"},{"id":"2-5","cn":"再練習一次吧！","ja":"もう一度練習しましょう！","hira":"もういちど れんしゅうしましょう！"}]},{"id":"3","title":"斗方與四字春聯","subtitle":"書法創作","items":[{"id":"3-1","cn":"請拿起毛筆。","ja":"筆を持ってください。","hira":"ふでを もってください。"},{"id":"3-2","cn":"請選一個喜歡的漢字。","ja":"好きな漢字を一つ選んでください。","hira":"すきな かんじを ひとつ えらんでください。"},{"id":"3-3","cn":"請不要太用力。","ja":"力を入れすぎないでください。","hira":"ちからを いれすぎないでください。"},{"id":"3-4","cn":"請從上往下寫。","ja":"上から下へ書いてください。","hira":"うえから したへ かいてください。"},{"id":"3-5","cn":"也可以加上自己喜歡的圖案。","ja":"好きな絵や模様を加えてもいいですよ。","hira":"すきな えや もようを くわえても いいですよ。"},{"id":"3-6","cn":"請自由創作！","ja":"自由に作ってみてください！","hira":"じゆうに つくってみてください！"}]},{"id":"4","title":"書法書籤","subtitle":"兩字創作","items":[{"id":"4-1","cn":"請選擇喜歡的兩個字。","ja":"好きな二文字の言葉を選んでください。","hira":"すきな にもじの ことばを えらんでください。"},{"id":"4-2","cn":"請直式書寫。","ja":"縦書きで書いてください。","hira":"たてがきで かいてください。"},{"id":"4-3","cn":"請慢慢寫，不用急。","ja":"ゆっくり書いてください。急がなくても大丈夫です。","hira":"ゆっくり かいてください。いそがなくても だいじょうぶです。"},{"id":"4-4","cn":"寫完後請讓墨汁晾乾。","ja":"書き終わったら、墨を乾かしてください。","hira":"かきおわったら、すみを かわかしてください。"}]},{"id":"5","title":"成果展示與拍照","subtitle":"","items":[{"id":"5-1","cn":"大家完成了嗎？","ja":"みなさん、できましたか？","hira":"みなさん、できましたか？"},{"id":"5-2","cn":"請展示你的作品。","ja":"作品を見せてください！","hira":"さくひんを みせてください！"},{"id":"5-3","cn":"大家互相欣賞作品吧！","ja":"お互いの作品を見てみましょう！","hira":"おたがいの さくひんを みてみましょう！"},{"id":"5-4","cn":"我們來拍大合照吧！","ja":"みんなで記念写真を撮りましょう！","hira":"みんなで きねんしゃしんを とりましょう！"},{"id":"5-5","cn":"請大家集合！","ja":"みなさん、集まってください！","hira":"みなさん、あつまってください！"},{"id":"5-6","cn":"請看鏡頭！","ja":"カメラを見てください！","hira":"かめらを みてください！"}]},{"id":"6","title":"現場隨時會用到的簡短日語","subtitle":"","items":[{"id":"6-1","cn":"謝謝！","ja":"ありがとう！","hira":"ありがとう！"},{"id":"6-2","cn":"很棒！","ja":"すばらしい！","hira":"すばらしい！"},{"id":"6-3","cn":"很漂亮！","ja":"きれいですね！","hira":"きれいですね！"},{"id":"6-4","cn":"沒問題！","ja":"大丈夫です！","hira":"だいじょうぶです！"},{"id":"6-5","cn":"請稍等。","ja":"ちょっと待ってください。","hira":"ちょっと まってください。"},{"id":"6-6","cn":"請看這裡。","ja":"こちらを見てください。","hira":"こちらを みてください。"},{"id":"6-7","cn":"請聽我說明。","ja":"説明を聞いてください。","hira":"せつめいを きいてください。"},{"id":"6-8","cn":"還有問題嗎？","ja":"質問はありますか？","hira":"しつもんは ありますか？"}]}];
+const PHRASES=GROUPS.flatMap(g=>g.items.map(p=>({...p,groupId:g.id,groupName:g.title})));
+const $=s=>document.querySelector(s);
+let category='all',visible=[],currentStage=-1,lastFocus=null,activeId=null,currentUtterance=null;
+const isMobile=/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+$('#speed').value=isMobile?'0.9':'1';
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]||''));}
+function stop(){if('speechSynthesis' in window)window.speechSynthesis.cancel();activeId=null;currentUtterance=null;document.querySelectorAll('.play.playing').forEach(x=>{x.classList.remove('playing');x.textContent=x.dataset.stage?'▶ 播放日文':'🔊 播放日文';});}
+function selectVoice(){const synth=window.speechSynthesis;if(!synth)return null;const vs=synth.getVoices(),jas=vs.filter(v=>String(v.lang).toLowerCase().startsWith('ja'));return jas.find(v=>v.localService)||jas[0]||null;}
+function play(itemId,btn){const p=PHRASES.find(x=>x.id===itemId);if(!p)return;if(!('speechSynthesis' in window)){alert('這個瀏覽器不支援語音朗讀，請改用 Chrome、Edge 或 Safari。');return;}const toggle=activeId===itemId;stop();if(toggle)return;const utter=new SpeechSynthesisUtterance(p.ja);utter.lang='ja-JP';utter.rate=Number($('#speed').value)||1;utter.pitch=1;const voice=selectVoice();if(voice)utter.voice=voice;activeId=itemId;currentUtterance=utter;if(btn){btn.classList.add('playing');btn.textContent='■ 停止朗讀';}
+utter.onend=utter.onerror=()=>{if(currentUtterance===utter)stop();};try{window.speechSynthesis.speak(utter);}catch(e){stop();alert('語音無法播放，請確認裝置已啟用日文朗讀。');}}
+function renderCats(){$('#categories').innerHTML=[{id:'all',title:'全部情境'},...GROUPS.map(g=>({id:g.id,title:g.title}))].map(g=>`<button class="category${category===g.id?' active':''}" type="button" data-cat="${g.id}">${esc(g.title)}</button>`).join('')}
+function render(){const q=$('#search').value.trim().toLocaleLowerCase();visible=PHRASES.filter(p=>(category==='all'||category===p.groupId)&&(!q||[p.cn,p.ja,p.hira].some(x=>x.toLocaleLowerCase().includes(q))));$('#count').textContent=`${visible.length} / ${PHRASES.length} 句`;renderCats();if(!visible.length){$('#content').innerHTML='<p class="empty">沒有找到符合的句子，請換個關鍵字。</p>';return;}let html='';for(const g of GROUPS){const arr=visible.filter(p=>p.groupId===g.id);if(!arr.length)continue;html+=`<section aria-labelledby="group-${g.id}"><div class="group-header"><h2 id="group-${g.id}">${esc(g.title)}</h2><span class="group-sub">${esc(g.subtitle)}・${arr.length}句</span></div><div class="grid">`;for(const p of arr){html+=`<article class="phrase"><div class="phrase-top"><div class="cn">${esc(p.cn)}</div><span class="num">${esc(p.id)}</span></div><div class="ja" lang="ja">${esc(p.ja)}</div><div class="hira" lang="ja">${esc(p.hira)}</div><div class="phrase-bottom"><button type="button" class="play" data-play="${p.id}">🔊 播放日文</button><button type="button" class="expand" data-open="${p.id}">大字顯示 ↗</button></div></article>`;}html+='</div></section>';}$('#content').innerHTML=html;}
+function setStage(k){if(!visible.length)return;currentStage=(k+visible.length)%visible.length;const p=visible[currentStage];$('#stageCat').textContent=p.groupName+`　${currentStage+1} / ${visible.length}`;$('#stageCn').textContent=p.cn;$('#stageJa').textContent=p.ja;$('#stageHira').textContent=p.hira;$('#stagePlay').dataset.play=p.id;$('#stagePlay').textContent='▶ 播放日文';$('#stagePlay').classList.remove('playing');}
+function openStage(id){const k=visible.findIndex(p=>p.id===id);if(k<0)return;lastFocus=document.activeElement;stop();setStage(k);$('#stageBg').classList.add('open');$('#stage').setAttribute('aria-hidden','false');$('#stageClose').focus();document.body.style.overflow='hidden';}
+function closeStage(){stop();$('#stageBg').classList.remove('open');$('#stage').setAttribute('aria-hidden','true');document.body.style.overflow='';if(lastFocus?.isConnected)lastFocus.focus();}
+$('#categories').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(!b)return;stop();category=b.dataset.cat;render();});
+$('#search').addEventListener('input',()=>{stop();render();});
+$('#content').addEventListener('click',e=>{const b=e.target.closest('[data-play],[data-open]');if(!b)return;if(b.dataset.play)play(b.dataset.play,b);else openStage(b.dataset.open);});
+$('#stagePlay').addEventListener('click',e=>play(e.currentTarget.dataset.play,e.currentTarget));
+$('#stagePrev').addEventListener('click',()=>{stop();setStage(currentStage-1);});
+$('#stageNext').addEventListener('click',()=>{stop();setStage(currentStage+1);});
+$('#stageClose').addEventListener('click',closeStage);
+$('#stageBg').addEventListener('click',e=>{if(e.target.id==='stageBg')closeStage();});
+$('#stop').addEventListener('click',stop);
+$('#speed').addEventListener('change',stop);
+document.addEventListener('keydown',e=>{if(!$('#stageBg').classList.contains('open'))return;if(e.key==='Escape')closeStage();else if(e.key==='ArrowLeft'){stop();setStage(currentStage-1);}else if(e.key==='ArrowRight'){stop();setStage(currentStage+1);}else if(e.key===' '&&document.activeElement===document.body){e.preventDefault();$('#stagePlay').click();}});
+window.addEventListener('pagehide',stop);
+render();
+</script>
+</body>
+</html>
